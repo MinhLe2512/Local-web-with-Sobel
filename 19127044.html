@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <title>19127044</title>
+</head>
+<style>
+    #videobcg { 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+     -webkit-filter: blur(125px);
+   -moz-filter: blur(125px);
+   -o-filter: blur(125px);
+   -ms-filter: blur(125px);
+   filter: blur(125px);
+ }
+</style>
+<body>
+    <video id="v" controls loop>
+        <source src=" testVideo.mp4" type="video/mp4">
+    </video>
+
+    <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+        <source src="http://ak3.picdn.net/shutterstock/videos/4207399/preview/stock-footage-man-hands-typing-on-a-computer-keyboard.mp4" type="video/mp4">
+        <source src="movie.webm" type="video/webm">
+             Sorry, your browser does not support HTML5 video.
+   </video>
+
+    <canvas id="c"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
